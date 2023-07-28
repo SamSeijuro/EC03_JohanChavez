@@ -1,4 +1,4 @@
-@server = http://localhost:8080
+@server = https://ec03-wndj.onrender.com
 
 @api = {{server}}/api/ec3
 
