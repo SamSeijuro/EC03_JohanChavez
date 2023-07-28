@@ -21,7 +21,8 @@ public class Instrumento {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_categoria")
-    private Instrumento instrumento;
+    private Categoria categoria;
+
 
     public Integer getId() {
         return id;
@@ -39,12 +40,12 @@ public class Instrumento {
         this.nombre = nombre;
     }
 
-    public Instrumento getInstrumento() {
-        return instrumento;
+    public Categoria getCategoria() {
+        return categoria;
     }
 
-    public void setInstrumento(Instrumento instrumento) {
-        this.instrumento = instrumento;
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
     
